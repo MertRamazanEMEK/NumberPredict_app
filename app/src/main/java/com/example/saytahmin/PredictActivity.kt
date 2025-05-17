@@ -43,7 +43,9 @@ class PredictActivity : AppCompatActivity() {
 
         if (tahmin == rastgelesayi)
         {
-            //val intent = Intent(this@PredictActivity,SonucActivity::class.java)
+            val value = 1
+            val intent = Intent(this@PredictActivity,SonucActivity::class.java)
+            startActivity(intent)
         }
         if ( tahmin!! >rastgelesayi) {
             binding.tahminText.text = "Azalt"
@@ -56,7 +58,9 @@ class PredictActivity : AppCompatActivity() {
         }
         if (sayac == 0)
         {
-
+            val value = 0
+            val intent = Intent(this@PredictActivity,SonucActivity::class.java)
+            startActivity(intent)
         }
     }
 }
