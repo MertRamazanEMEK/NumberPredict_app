@@ -7,4 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".SonucActivity">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="228dp"
+        android:layout_height="88dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="518dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
