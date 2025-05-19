@@ -29,10 +29,14 @@ class SonucActivity : AppCompatActivity() {
 
         val sonuc = intent.getIntExtra("value", 1)
 
-        if (sonuc == )
+        if (sonuc)
         {
-            binding
+            binding.textView2.text = "KAZANDINIZ"
 
+
+        }
+        else{
+            binding.textView2.text = "KAYBETTİNİZ"
         }
 
 
