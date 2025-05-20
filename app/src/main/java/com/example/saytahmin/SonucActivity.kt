@@ -1,6 +1,8 @@
 package com.example.saytahmin
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,42 +18,31 @@ class SonucActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-
-
-
-
-
-
-
-
-
-
-
         val sonuc = intent.getIntExtra("value", 1)
 
-        if (sonuc)
+        if (sonuc == 1)
         {
             binding.textView2.text = "KAZANDINIZ"
-
-
+            binding.imageView2.setImageResource(R.drawable.drav_upvote)
         }
         else{
             binding.textView2.text = "KAYBETTİNİZ"
+            binding.imageView2.setImageResource(R.drawable.draw_bad)
         }
-
-
-
         enableEdgeToEdge()
-
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
-
-
-
         }
 
+
+    }
+    fun tekrar (view : View)
+    {
+        val intent = Intent(this@SonucActivity,MainActivity::class.java)
+        finish()
+        startActivity(intent)
 
     }
 }

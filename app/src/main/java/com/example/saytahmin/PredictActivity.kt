@@ -22,10 +22,8 @@ class PredictActivity : AppCompatActivity() {
         binding = ActivityPredictBinding.inflate(layoutInflater)
         val view = binding.root
 
-
         rastgelesayi = Random.nextInt(101)
         setContentView(view)
-
         enableEdgeToEdge()
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
