@@ -8,7 +8,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.saytahmin.databinding.ActivityMainBinding
 import com.example.saytahmin.databinding.ActivityPredictBinding
 import kotlin.random.Random
 
@@ -16,7 +15,7 @@ class PredictActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPredictBinding
     private var rastgelesayi = 0
     private var sayac = 8
-    var tahmin : Int? = null
+    private var tahmin : Int? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
