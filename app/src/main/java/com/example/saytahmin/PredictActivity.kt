@@ -1,5 +1,6 @@
 package com.example.saytahmin
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -33,10 +34,11 @@ class PredictActivity : AppCompatActivity() {
         }
 
     }
+    @SuppressLint("SetTextI18n")
     fun tahminet (view : View)
     {
         tahmin = binding.editTextNumber2.text.toString().toIntOrNull()
-        sayac -= sayac
+        sayac -= 1
 
 
         if (tahmin == rastgelesayi)

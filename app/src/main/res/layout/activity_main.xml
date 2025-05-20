@@ -20,6 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/draw_zar" />
+
     <Button
         android:id="@+id/button"
         style="@style/Widget.AppCompat.Button"
@@ -27,8 +28,9 @@
         android:layout_height="71dp"
         android:layout_marginTop="70dp"
         android:layout_marginBottom="184dp"
+        android:background="#00BCD4"
         android:onClick="tikla"
-        android:text="Button"
+        android:text="Oyuna Başla"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

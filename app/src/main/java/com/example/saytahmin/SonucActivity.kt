@@ -18,14 +18,14 @@ class SonucActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        val sonuc = intent.getIntExtra("value", 1)
+        val sonuc = intent.getIntExtra("value", 0)
 
         if (sonuc == 1)
         {
             binding.textView2.text = "KAZANDINIZ"
             binding.imageView2.setImageResource(R.drawable.drav_upvote)
         }
-        else{
+        if (sonuc == 0){
             binding.textView2.text = "KAYBETTİNİZ"
             binding.imageView2.setImageResource(R.drawable.draw_bad)
         }
