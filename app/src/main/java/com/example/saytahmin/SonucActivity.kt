@@ -18,7 +18,8 @@ class SonucActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        val sonuc = intent.getIntExtra("value", 0)
+        val sonuc = intent.getIntExtra("value",1)
+
 
         if (sonuc == 1)
         {

@@ -15,7 +15,7 @@ import kotlin.random.Random
 class PredictActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPredictBinding
     private var rastgelesayi = 0
-    private var sayac = 5
+    private var sayac = 8
     var tahmin : Int? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,8 +43,9 @@ class PredictActivity : AppCompatActivity() {
 
         if (tahmin == rastgelesayi)
         {
-            val value = 1
             val intent = Intent(this@PredictActivity,SonucActivity::class.java)
+            intent.putExtra("value", 1) // Kazandı
+            finish()
             startActivity(intent)
         }
         if ( tahmin!! >rastgelesayi) {
@@ -58,8 +59,9 @@ class PredictActivity : AppCompatActivity() {
         }
         if (sayac == 0)
         {
-            val value = 0
             val intent = Intent(this@PredictActivity,SonucActivity::class.java)
+            intent.putExtra("value", 0) // Kazandı
+            finish()
             startActivity(intent)
         }
     }
