@@ -21,7 +21,6 @@ class SonucActivity : AppCompatActivity() {
 
         val sonuc = intent.getIntExtra("value",1)
 
-
         if (sonuc == 1)
         {
             binding.textView2.text = "KAZANDINIZ"
@@ -37,14 +36,11 @@ class SonucActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-
     }
     fun tekrar (view : View)
     {
         val intent = Intent(this@SonucActivity,MainActivity::class.java)
         finish()
         startActivity(intent)
-
     }
 }
