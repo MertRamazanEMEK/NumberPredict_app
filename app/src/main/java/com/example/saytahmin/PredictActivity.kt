@@ -29,17 +29,13 @@ class PredictActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
-
         }
-
     }
     @SuppressLint("SetTextI18n")
     fun tahminet (view : View)
     {
         tahmin = binding.editTextNumber2.text.toString().toIntOrNull()
         sayac -= 1
-
-
         if (tahmin == rastgelesayi)
         {
             val intent = Intent(this@PredictActivity,SonucActivity::class.java)
